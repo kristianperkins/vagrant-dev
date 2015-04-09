@@ -1,4 +1,5 @@
 class base {
-  package { "zsh": ensure => "installed"}
+  $packages = ['git', 'zsh']
+  package { $packages: ensure => 'installed'}
 }
 
