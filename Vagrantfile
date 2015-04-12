@@ -10,8 +10,6 @@ Vagrant.configure("2") do |config|
     config.cache.scope = :machine
   end
 
-  config.librarian_puppet.puppetfile_dir = "puppet"
-
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file = "site.pp"
