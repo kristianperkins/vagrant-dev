@@ -1,5 +1,5 @@
 class base {
-  $packages = ['git', 'zsh']
+  $packages = ['git', 'zsh', 'python-pip']
   package { $packages: ensure => 'installed'}
 }
 
